@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_20dp"
+    android:layout_marginVertical="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_humidity_label"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_humidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/round_bg"
+        android:padding="@dimen/_10dp"
+        android:src="@drawable/humidity"
+        app:layout_constraintEnd_toEndOf="@+id/tv_humidity_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_humidity_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_humidity_label" />
+
+    <TextView
+        android:id="@+id/tv_humidity_value"
+        style="@style/TitleStyle16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="70%" />
+
+
+    <TextView
+        android:id="@+id/tv_pressure_label"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_pressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/tv_pressure_icon"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/round_bg"
+        android:padding="@dimen/_10dp"
+        android:src="@drawable/wind"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pressure_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_pressure_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pressure_label" />
+
+    <TextView
+        android:id="@+id/tv_pressure_value"
+        style="@style/TitleStyle16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pressure_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_pressure_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pressure_icon"
+        tools:text="1001 mBar" />
+
+    <TextView
+        android:id="@+id/tv_visibility_label"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_visibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_pressure_visibility"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/round_bg"
+        android:padding="@dimen/_10dp"
+        android:src="@drawable/visibility"
+        app:layout_constraintEnd_toEndOf="@+id/tv_visibility_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_visibility_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_visibility_label" />
+
+    <TextView
+        android:id="@+id/tv_visibility_value"
+        style="@style/TitleStyle16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_visibility_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pressure_visibility"
+        tools:text="4 km" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
