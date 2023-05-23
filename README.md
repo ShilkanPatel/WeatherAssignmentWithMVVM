@@ -1,4 +1,4 @@
-# Ping
+# Binal Android Assignment
 
 ##drawable Naming##
 
