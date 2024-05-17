@@ -1,4 +1,4 @@
-# Binal Android Assignment
+# Shilkan Android Assignment
 
 
 please replace API_KEY in build.gradle (replace API_KEY insted of key )
